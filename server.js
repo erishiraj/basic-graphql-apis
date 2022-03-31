@@ -43,7 +43,7 @@ app.get("/", (req, res, next) => {
   res.send("<div>Hello</div>");
 });
 
-const httpServer = app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log(
     `Sever running on ${process.env.PORT} \nGraphql Endpoint ${apolloServer.graphqlPath}`
   );
